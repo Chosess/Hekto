@@ -1,0 +1,18 @@
+body {
+  font-family: josefin sans;
+  margin: 0;
+  margin-top: 0;
+}
+
+nav .un {
+  background-color: #7E33E0;
+  color: white;
+}
+nav .un ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
