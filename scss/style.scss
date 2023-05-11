@@ -520,7 +520,6 @@ nav {
                 margin: auto;
                 color: white;
                 border-radius: 2px;
-                
             }
         }
 
@@ -688,4 +687,23 @@ footer {
 
 .bouton2 {
     margin: auto;
+}
+
+
+
+
+
+@media screen and (min-width:1000px) {
+    .accueil{
+        &>div:first-child{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 500px;
+                margin: 0;
+            }
+        }
+        
+    }
 }
