@@ -101,7 +101,7 @@ nav {
     //     margin-bottom: 40px;
     // }
 
-    
+
 
 }
 
@@ -114,52 +114,58 @@ nav {
     }
 
     &>div {
-        text-align: center;
-        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
 
-        margin: auto;
+        &>div {
+            text-align: center;
+            width: 270px;
 
-        &>div:nth-child(1) {
-            background-color: #F6F7FB;
-        }
+            margin: auto;
 
-        &>h5 {
-            font-size: 18px;
-            font-weight: bold;
-            color: #FB2E86;
-            font-family: lato;
-            margin: 20px;
-        }
-
-        &>div:nth-child(3) {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-
-            &>div {
-                width: 15px;
-                height: 5px;
-                background-color: #05E6B7;
-                border-radius: 5px;
+            &>div:nth-child(1) {
+                background-color: #F6F7FB;
             }
 
-            &>div:nth-child(2) {
-                background-color: #F701A8;
+            &>h5 {
+                font-size: 18px;
+                font-weight: bold;
+                color: #FB2E86;
+                font-family: lato;
+                margin: 20px;
             }
 
             &>div:nth-child(3) {
-                background-color: #00009D;
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+
+                &>div {
+                    width: 15px;
+                    height: 5px;
+                    background-color: #05E6B7;
+                    border-radius: 5px;
+                }
+
+                &>div:nth-child(2) {
+                    background-color: #F701A8;
+                }
+
+                &>div:nth-child(3) {
+                    background-color: #00009D;
+                }
+            }
+
+            &>p {
+                font-size: 14px;
+            }
+
+            p:nth-child(5) {
+                font-family: lato;
             }
         }
-
-        &>p {
-            font-size: 14px;
-        }
-
-        p:nth-child(5) {
-            font-family: lato;
-        }
-
     }
 }
 
@@ -169,61 +175,72 @@ nav {
         font-size: 24px;
     }
 
-    &>div:nth-child(2) {
-        background-color: #F7F7F7;
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-
-    &>div:nth-child(3) {
-        margin: 0 20px;
+    &>div {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        font-size: 16px;
-
-        >p:nth-child(1) {
-            position: relative;
-        }
-
-        >p:nth-child(1)::after {
-            display: block;
-            position: absolute;
-            content: "";
-            width: 140px;
-            height: 2px;
-            background-color: #EEEFFB;
-            top: 20px;
-            left: 2px;
-        }
+        gap: 100px;
 
         &>div {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            min-width: 300px;
 
-            >p {
-                font-size: 14px;
+            .fondimage {
+                background-color: #F7F7F7;
+                width: 90%;
+                margin: auto;
+                text-align: center;
             }
 
-            >p:nth-child(2) {
-                font-size: 12px;
-                color: #FB2448;
-                position: relative;
+            .textimage {
+                margin: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+
+                >p:nth-child(1) {
+                    position: relative;
+                }
+
+                >p:nth-child(1)::after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: 140px;
+                    height: 2px;
+                    background-color: #EEEFFB;
+                    top: 20px;
+                    left: 2px;
+                }
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    >p {
+                        font-size: 14px;
+                    }
+
+                    >p:nth-child(2) {
+                        font-size: 12px;
+                        color: #FB2448;
+                        position: relative;
 
 
-            }
+                    }
 
-            >p:nth-child(2)::after {
-                display: block;
-                position: absolute;
-                content: "";
-                width: 35px;
-                height: 1px;
-                background-color: #FB2448;
-                top: 7px;
-                left: 2px;
+                    >p:nth-child(2)::after {
+                        display: block;
+                        position: absolute;
+                        content: "";
+                        width: 35px;
+                        height: 1px;
+                        background-color: #FB2448;
+                        top: 7px;
+                        left: 2px;
+                    }
+                }
             }
         }
     }
@@ -397,6 +414,7 @@ nav {
 
                 p {
                     font-size: 12px;
+                    position: relative;
 
                     &::after {
                         content: "";
@@ -404,8 +422,8 @@ nav {
                         height: 1px;
                         background-color: rgba(21, 24, 117, 1);
                         position: absolute;
-                        top: 78px;
-                        right: 170px;
+                        top: 6px;
+                        right: 120px;
                     }
                 }
 
@@ -502,6 +520,7 @@ nav {
                 margin: auto;
                 color: white;
                 border-radius: 2px;
+                
             }
         }
 
@@ -535,6 +554,11 @@ nav {
     }
 }
 
+.marques{
+    object-fit: cover;
+    width: 100%;
+}
+
 .blog {
     h2 {
         text-align: center;
@@ -553,6 +577,8 @@ nav {
         }
 
         &>div {
+            margin: 0 10px;
+
             &>div {
                 display: flex;
                 align-items: center;
@@ -574,7 +600,8 @@ nav {
                 line-height: 30px;
                 color: #72718F;
                 font-family: lato;
-                a{
+
+                a {
                     font-size: 16px;
                     font-family: lato;
                     color: #151875;
@@ -584,19 +611,22 @@ nav {
     }
 }
 
-footer{
+footer {
     background-color: #EEEFFB;
     text-align: center;
-    &>h2{
+
+    &>h2 {
         font-size: 24px;
         font-weight: 600;
         color: black;
     }
-    &>h2:nth-child(1){
+
+    &>h2:nth-child(1) {
         font-weight: bold;
     }
-    &>div:nth-child(2){
-        background-color: white;
+
+    &>form:nth-child(2) {
+        background-color: rgba(255, 255, 255, 0.5);
         width: 270px;
         margin: auto;
         display: flex;
@@ -604,31 +634,38 @@ footer{
         align-items: center;
         height: 40px;
         border-radius: 3px;
-        input{
+
+        input {
             height: 28px;
             border: none;
             color: #8A8FB9;
+            background-color: rgba(255, 255, 255, 0);
+            width: 160px;
         }
-        button{
+
+        button {
             height: 35px;
             background-color: #FB2E86;
             border: none;
-            border-radius: 2px;
-            width: 80px;
+            border-radius: 3px;
+            width: 100px;
             color: #EEEFFB;
         }
-        
+
     }
-    p{
+
+    p {
         color: #8A8FB9;
     }
-    &>div:nth-child(5){
+
+    &>div:nth-child(5) {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -636,30 +673,6 @@ footer{
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
