@@ -2,6 +2,7 @@ body {
     font-family: josefin sans;
     margin: 0;
     color: #151875;
+    overflow-x: hidden;
 }
 
 
@@ -115,15 +116,14 @@ nav {
 
     &>div {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 100px;
+        overflow-x: scroll;
 
         &>div {
             text-align: center;
             width: 270px;
 
-            margin: auto;
+            margin: 40px;
 
             &>div:nth-child(1) {
                 background-color: #F6F7FB;
@@ -177,12 +177,12 @@ nav {
 
     &>div {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 100px;
+        overflow-x: scroll;
 
         &>div {
             min-width: 300px;
+            margin: 40px;
 
             .fondimage {
                 background-color: #F7F7F7;
@@ -251,22 +251,28 @@ nav {
         text-align: center;
     }
 
-    div {
-        text-align: center;
-        width: 240px;
-        margin: auto;
+    &>div {
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
 
-        box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
-        padding: 40px 10px;
+        &>div {
+            text-align: center;
+            min-width: 250px;
+            margin: 40px;
 
-        h5 {
-            font-size: 22px;
-        }
+            box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+            padding: 40px 10px;
 
-        p {
-            color: rgba(26, 11, 91, 0.3);
-            font-family: lato;
-            font-weight: 700;
+            h5 {
+                font-size: 22px;
+            }
+
+            p {
+                color: rgba(26, 11, 91, 0.3);
+                font-family: lato;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -322,41 +328,47 @@ nav {
     }
 
     &>div:nth-child(2) {
-        width: 240px;
-        margin: auto;
-        text-align: center;
-        box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
-
-        img {
-            background-color: #F5F6F8;
-            padding: 20px;
-        }
-
-        h5 {
-            font-size: 16px;
-            font-family: lato;
-        }
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
 
         &>div {
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            min-width: 240px;
+            margin: 30px;
+            text-align: center;
+            box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
 
-            &>p:nth-child(2) {
-                color: rgba(21, 24, 117, 0.3);
-                font-size: 12px;
+            img {
+                background-color: #F5F6F8;
+                padding: 20px;
             }
 
-            &>p:nth-child(2)::after {
-                content: "";
-                width: 35px;
-                height: 1px;
-                background-color: rgba(21, 24, 117, 0.3);
-                position: absolute;
-                top: 24px;
-                right: 70px;
+            h5 {
+                font-size: 16px;
+                font-family: lato;
+            }
+
+            &>div {
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                &>p:nth-child(2) {
+                    color: rgba(21, 24, 117, 0.3);
+                    font-size: 12px;
+                }
+
+                &>p:nth-child(2)::after {
+                    content: "";
+                    width: 35px;
+                    height: 1px;
+                    background-color: rgba(21, 24, 117, 0.3);
+                    position: absolute;
+                    top: 24px;
+                    right: 70px;
+                }
             }
         }
     }
@@ -497,40 +509,46 @@ nav {
     }
 
     &>div {
-        width: 270px;
-        margin: auto;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
 
         &>div {
-            height: 270px;
             width: 270px;
-            border-radius: 50%;
-            background-color: #F6F7FB;
+            margin: 40px;
+            text-align: center;
 
-            box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+            &>div {
+                height: 270px;
+                width: 270px;
+                border-radius: 50%;
+                background-color: #F6F7FB;
 
-            img {
-                margin-top: 20px;
+                box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+
+                img {
+                    margin-top: 20px;
+                }
+
+                .boutonhover {
+                    padding: 10px;
+                    background-color: #08D15F;
+                    width: 100px;
+                    margin: auto;
+                    color: white;
+                    border-radius: 2px;
+                }
             }
 
-            .boutonhover {
-                padding: 10px;
-                background-color: #08D15F;
-                width: 100px;
-                margin: auto;
-                color: white;
-                border-radius: 2px;
+            h5 {
+                font-size: 20px;
+                font-weight: 400;
             }
-        }
 
-        h5 {
-            font-size: 20px;
-            font-weight: 400;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 400;
+            p {
+                font-size: 16px;
+                font-weight: 400;
+            }
         }
     }
 }
@@ -553,8 +571,7 @@ nav {
     }
 }
 
-.marques{
-    object-fit: cover;
+.marques {
     width: 100%;
 }
 
@@ -694,16 +711,17 @@ footer {
 
 
 @media screen and (min-width:1000px) {
-    .accueil{
-        &>div:first-child{
+    .accueil {
+        &>div:first-child {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            img{
+
+            img {
                 width: 500px;
                 margin: 0;
             }
         }
-        
+
     }
 }
