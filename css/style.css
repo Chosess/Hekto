@@ -486,6 +486,7 @@ footer > h2 {
   font-size: 24px;
   font-weight: 600;
   color: black;
+  padding-top: 15px;
 }
 footer > h2:nth-child(1) {
   font-weight: bold;
