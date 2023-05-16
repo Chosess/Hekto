@@ -1,0 +1,204 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    color: #151875;
+    // max-width: 375px;
+}
+
+nav {
+    .un {
+        background-color: #7E33E0;
+        color: white;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .deux {
+        font-size: 34px;
+        font-weight: bold;
+        // padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+
+        &>div {
+            display: flex;
+
+            .burger {
+                // margin-top: 6px;
+                margin-right: 10px;
+
+                div {
+                    background-color: #FB2E86;
+                    width: 30px;
+                    height: 4px;
+                    margin-top: 6px;
+                    border-radius: 2px;
+                }
+            }
+
+            .recherche {
+                background-color: #FB2E86;
+                width: 50px;
+                height: 35px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.shopgriddefault {
+    background-color: rgba(246, 245, 255, 1);
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    span {
+        color: #FB2E86;
+    }
+}
+
+.produits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carrousel {
+        width: 50vh;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+
+        .catreprod{
+            margin: 45px;
+        }
+        .catreprod img {
+            background-color: #F6F7FB;
+            height: 178px;
+            width: 178px;
+            padding: 20px;
+        }
+
+        .texte {
+            .p {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            :nth-last-child(2) {
+                display: flex;
+                gap: 3px;
+                justify-content: center;
+
+                :first-child {
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(222, 144, 52, 1);
+                    border-radius: 50%;
+                }
+
+                :nth-child(2) {
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(236, 66, 162, 1);
+                    border-radius: 50%;
+                }
+
+                :nth-child(3) {
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(133, 104, 255, 1);
+                    border-radius: 50%;
+                }
+            }
+
+            .divprix {
+                display: flex;
+                justify-content: space-evenly;
+
+                :last-child {
+                    color: #FB2E86;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+footer {
+    background-color: #EEEFFB;
+    text-align: center;
+
+    &>h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: black;
+    }
+
+    &>h2:nth-child(1) {
+        font-weight: bold;
+    }
+
+    &>form:nth-child(2) {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 270px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        border-radius: 3px;
+
+        input {
+            height: 28px;
+            border: none;
+            color: #8A8FB9;
+            background-color: rgba(255, 255, 255, 0);
+            width: 160px;
+        }
+
+        button {
+            height: 35px;
+            background-color: #FB2E86;
+            border: none;
+            border-radius: 3px;
+            width: 100px;
+            color: #EEEFFB;
+        }
+
+    }
+
+    p {
+        color: #8A8FB9;
+    }
+
+    &>div:nth-child(5) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #E7E4F8;
+
+    }
+}
